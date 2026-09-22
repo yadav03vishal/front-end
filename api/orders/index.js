@@ -12,8 +12,6 @@
     console.log("Request received with body: " + JSON.stringify(req.body));
     var logged_in = req.cookies.logged_in;
     
-    const payroll = req.body.payroll
-
     axios.post('www.axdf.sdf.abc.com/signup', {
         payroll: payroll
     })
